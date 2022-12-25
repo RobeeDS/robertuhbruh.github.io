@@ -65,16 +65,17 @@ p {
 }
 
 /* Making sure that links stay the same color for consistent UI */
-h1, h1:before, h1:visited, a:before, a:link, a:visited{
+h1, h1:before, h1:visited, a:before, a:visited{
   font-size: 2em;
   color: #f6f5f5;
 }
 
-#link:visited {
+/* Ensures that links remain the same color throughout */
+.preview a:link, .content a:link {
   color: inherit;
 }
 
-#link:hover {
+a:hover {
   color: #05a268;
 }
 
