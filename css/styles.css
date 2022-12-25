@@ -1,0 +1,117 @@
+html {
+  display: grid;
+  align-items: center;
+  font-family: monospace;
+  max-width: 1000px;
+
+  /* Centering all elements */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Navigational Bar */
+.topnav {
+  overflow: hidden;
+  background-color: #171a25;
+  border-radius: 0.5rem;
+  margin-top: 1%;
+}
+
+/* Navigational Bar buttons*/
+.topnav a {
+  float: left;
+  color: #f6f5f5;
+  align-self: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em; 
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #05a268;
+  color: black;
+  transition-duration: 0.75s;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #05a268;
+  color: #f6f5f5;
+}
+
+/* Preview frame on home page */
+.preview {
+  float: center;
+}
+
+/* Preview frame continued */
+#frame {
+  width: 100%;
+  height: 20em;
+  border-radius: 0.5rem;
+  border-color: #f6f5f5;
+}
+
+/* Content */
+body {
+  background-color: #0c0d11;
+  color: #f6f5f5;
+}
+
+p {
+  font-size: 1.3em;
+  color: #595d80;
+}
+
+/* Making sure that links stay the same color for consistent UI */
+h1, h1:before, h1:visited, a:before, a:visited{
+  font-size: 2em;
+  color: #f6f5f5;
+}
+
+#link:visited {
+  color: inherit;
+}
+
+#link:hover {
+  color: #05a268;
+}
+
+
+  ul, #gamedev {
+    list-style-type: none;
+  }
+  
+  #gamedev {
+    margin: 0;
+    padding: 0;
+  }
+
+  .caret {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: #f6f5f5;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
