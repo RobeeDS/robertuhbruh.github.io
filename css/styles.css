@@ -71,7 +71,7 @@ h1, h1:before, h1:visited{
 }
 
 /* Ensures that links remain the same color throughout */
-.preview a:link, .content a:link {
+a:before, a:link, a:visited{
   color: inherit;
 }
 
