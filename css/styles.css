@@ -65,7 +65,7 @@ p {
 }
 
 /* Making sure that links stay the same color for consistent UI */
-h1, h1:before, h1:visited, a:before, a:visited{
+h1, h1:before, h1:visited, a:before, a:link, a:visited{
   font-size: 2em;
   color: #f6f5f5;
 }
@@ -78,20 +78,19 @@ h1, h1:before, h1:visited, a:before, a:visited{
   color: #05a268;
 }
 
-
-  ul, #gamedev {
-    list-style-type: none;
-  }
+ul, #gamedev {
+  list-style-type: none;
+}
   
-  #gamedev {
-    margin: 0;
-    padding: 0;
-  }
+#gamedev {
+  margin: 0;
+  padding: 0;
+}
 
-  .caret {
-    cursor: pointer;
-    user-select: none;
-  }
+.caret {
+  cursor: pointer;
+  user-select: none;
+}
 
   /* Create the caret/arrow with a unicode, and style it */
 .caret::before {
