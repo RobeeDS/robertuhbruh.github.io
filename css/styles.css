@@ -87,12 +87,13 @@ ul, #gamedev {
   padding: 0;
 }
 
+/* Creates the pointer for directories */
 .caret {
   cursor: pointer;
   user-select: none;
 }
 
-  /* Create the caret/arrow with a unicode, and style it */
+/* Create the caret/arrow with a unicode, and style it */
 .caret::before {
   content: "\25B6";
   color: #f6f5f5;
