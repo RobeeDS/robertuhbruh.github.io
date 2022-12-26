@@ -59,9 +59,10 @@ body {
   color: #f6f5f5;
 }
 
+/* Contrasting paragraph color to environment*/
 p {
   font-size: 1.3em;
-  color: #767ba8;
+  color: #7e83b3;
 }
 
 /* Making sure that links stay the same color for consistent UI */
