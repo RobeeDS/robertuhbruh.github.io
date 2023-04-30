@@ -1,0 +1,25 @@
+body {
+  font-family: Montserrat, sans-serif;
+  --bs-info: #e5F6FF;
+  --bs-info-rgb: 229,246,255;
+  --bs-dark: #061720;
+  --bs-dark-rgb: 6,23,32;
+  --bs-body-bg: var(--bs-dark);
+  --bs-body-color: var(--bs-gray-100);
+}
+
+.container {
+  height: 100%;
+  max-width: 980px;
+}
+
+.text-badge {
+  padding: .1em 0.4em;
+}
+
+.banner {
+  padding: 2em 1em;
+  background: #0d2d40;
+  border-radius: 0.3em;
+}
+
