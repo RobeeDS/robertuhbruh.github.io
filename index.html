@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" style="scrollbar-gutter: stable both-edges;">
+<html data-bs-theme="light" lang="en" style="--bs-body-bg: #061720;--bs-dark: #0d2d40;--bs-dark-rgb: 13,45,64;--bs-body-color: #f8f9fa;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>RobeeDS | Home</title>
-    <meta name="description" content="Hello! My name is Robee and welcome to my site. Here, you'll find various posts regarding my experiences in cybersecurity, web design, and game development.">
+    <title>RobeeDS</title>
+    <meta name="twitter:image" content="https://robeeds.me/assets/img/favicon/android-chrome-512x512.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Hi! I'm Robee D. I am a freelancer who specializes in UI/UX design, game development, and cybersecurity. ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://robeeds.me/assets/img/favicon/android-chrome-512x512.png">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "RobeeDS",
+            "url": "https://robeeds.me"
+        }
+    </script>
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -13,120 +25,185 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/Articles-Badges-images.css">
-    <link rel="stylesheet" href="assets/css/Footer-Clean-icons.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
 </head>
 
-<body class="min-vh-100">
+<body style="font-family: Montserrat, sans-serif;">
     <header>
-        <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="border-radius: 100%;background: url(&quot;assets/img/favicon/android-chrome-512x512.png&quot;) center / contain;"></span><span>RobeeDS</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar navbar-expand-md fixed-top bg-dark py-3" data-bs-theme="dark">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: url(&quot;assets/img/favicon/android-chrome-512x512.png&quot;) center / contain;"></span><span>RobeeDS</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-5">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(&quot;assets/img/ocean.jpg&quot;);background-position: center;background-size: cover;">
-            <div class="container d-flex flex-column justify-content-end align-items-start">
-                <h1 class="display-3 fw-semibold text-white">Robee D.&nbsp;</h1>
-                <p class="fs-4 text-info text-badge mb-5">Cybersecurity | Web Design | Game Development</p>
+    </header>
+    <section id="landing" style="background: url(&quot;assets/img/ocean.jpg&quot;) center / cover;min-height: 100vh;">
+        <div class="d-flex align-items-end" data-bss-parallax-bg="true" style="min-height: 100vh;">
+            <div class="container" style="padding-bottom: 5%;">
+                <h1 class="display-3 fw-semibold" data-bss-disabled-mobile="true" data-aos="fade-right" data-aos-duration="850" data-aos-offset="100px" data-aos-delay="100">Hi, I'm Robee D.&nbsp;</h1>
+                <p class="fs-4" data-bss-disabled-mobile="true" data-aos="fade-right" data-aos-duration="850" data-aos-offset="100px" data-aos-delay="100" style="padding: .1em .1em;">Cybersecurity | Web Design | Game Development</p>
             </div>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="container" style="padding: 2em 1em;margin-top: 1em;margin-bottom: 1em;">
-                <p class="fs-5" style="text-align: center;"><span style="color: rgb(229, 246, 255);">Hello! My name is Robee and welcome to my site. Here, you'll&nbsp;find various posts regarding my experiences in cybersecurity, web design, and game development. Thank you for visiting, and I hope you enjoy&nbsp;your adventure.&nbsp;</span></p>
-            </div>
-        </section>
-        <section>
-            <div class="container" style="margin-top: 1em;margin-bottom: 1em;">
-                <div class="text-center banner" style="background: #0d2d40;">
-                    <p class="fs-2" style="text-align: center;border-radius: 0.3em;">Browse my Portfolio</p><a class="btn btn-primary btn-lg text-uppercase fw-semibold" role="button" href="portfolio.html">Here&nbsp;<i class="fas fa-chevron-right"></i></a>
+    </section>
+    <section class="d-flex align-items-center" id="about" style="min-height: 100vh;padding-top: 2em;padding-bottom: 2em;">
+        <div class="container" style="max-height: 100%;">
+            <div class="row" id="aboutDescription" style="max-height: 50vh;">
+                <div class="col-md-12">
+                    <p class="text-white-50" style="margin-bottom: 2px;">Introduction</p>
+                    <h1>Overview</h1>
+                    <p class="text-white-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea quaerat alias accusamus voluptas autem! Alias odit voluptates in totam vitae dignissimos minus eaque culpa unde tempore dolore aperiam obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.</p>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="col" style="margin-bottom: 1em;">
-                <div class="container py-4 py-xl-5" style="padding: 2em 1em;margin-bottom: 1em;margin-top: 1em;">
-                    <div class="d-flex align-items-center align-items-md-start justify-content-xl-center align-items-xl-center">
-                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-shield-check">
-                                <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"></path>
-                                <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
-                            </svg></div>
-                        <div>
-                            <h3>Cybersecurity</h3>
-                            <p class="fs-6"><span style="color: rgb(222, 228, 234); background-color: rgb(25, 25, 24);">See my progress and experience in both offensive and defensive security.&nbsp;</span></p><a href="#">Coming Soon&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                </svg></a>
+            <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-4" id="aboutCards">
+                <div class="col d-flex justify-content-center flex-sm-grow-0 flex-md-grow-1 justify-content-md-evenly flex-lg-grow-1 justify-content-lg-center justify-content-xl-start justify-content-xxl-start" style="margin-top: 20px;">
+                    <div class="card bg-dark" data-bss-disabled-mobile="true" data-aos="fade-down" data-aos-duration="850" style="border-radius: 20px;min-height: 280px;width: 250px;">
+                        <div class="card-body d-flex flex-column justify-content-evenly align-items-center align-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bag-check" style="font-size: 64px;">
+                                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                            </svg>
+                            <h3 class="card-title" style="text-align: center;">Cybersecurity</h3>
                         </div>
                     </div>
-                    <hr class="my-5">
-                    <div class="d-flex align-items-center align-items-md-start justify-content-lg-end justify-content-xl-center align-items-xl-center">
-                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center order-last justify-content-xl-center ms-4 d-inline-block bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-window-sidebar">
-                                <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path>
-                                <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"></path>
-                            </svg></div>
-                        <div>
-                            <h3>Web Design</h3>
-                            <p class="fs-6"><span style="color: rgb(222, 228, 234); background-color: rgb(25, 25, 24);">Have a glimpse at&nbsp; my first front-end web development project.&nbsp;</span></p><a href="#">Coming Soon<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                </svg></a>
+                </div>
+                <div class="col d-flex justify-content-center flex-sm-grow-0 flex-md-grow-1 justify-content-md-evenly flex-lg-grow-1 justify-content-lg-center justify-content-xl-start justify-content-xxl-start" style="margin-top: 20px;">
+                    <div class="card bg-dark" data-bss-disabled-mobile="true" data-aos="fade-down" data-aos-duration="850" style="border-radius: 20px;min-height: 280px;width: 250px;">
+                        <div class="card-body d-flex flex-column justify-content-evenly align-items-center align-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-window-stack" style="font-size: 64px;">
+                                <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"></path>
+                                <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"></path>
+                            </svg>
+                            <h3 class="card-title" style="text-align: center;">Web Design</h3>
                         </div>
                     </div>
-                    <hr class="my-5">
-                    <div class="d-flex align-items-center align-items-md-start justify-content-xl-center align-items-xl-center">
-                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-controller">
-                                <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"></path>
-                                <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"></path>
-                            </svg></div>
-                        <div>
-                            <h3>Game Development</h3>
-                            <p class="fs-6"><span style="color: rgb(222, 228, 234); background-color: rgb(25, 25, 24);">View the process I took in creating a 3-stage game in C# within 3 weeks.&nbsp;</span></p><a href="#">Coming Soon<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                </svg></a>
+                </div>
+                <div class="col d-flex justify-content-center flex-sm-grow-0 flex-md-grow-1 justify-content-md-evenly flex-lg-grow-1 justify-content-lg-center justify-content-xl-start justify-content-xxl-start" style="margin-top: 20px;">
+                    <div class="card bg-dark" data-bss-disabled-mobile="true" data-aos="fade-down" data-aos-duration="850" style="border-radius: 20px;min-height: 280px;width: 250px;">
+                        <div class="card-body d-flex flex-column justify-content-evenly align-items-center align-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-hdd-stack" style="font-size: 64px;">
+                                <path d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2z"></path>
+                                <path d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"></path>
+                                <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"></path>
+                            </svg>
+                            <h3 class="card-title" style="text-align: center;">Game Development</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center flex-sm-grow-0 flex-md-grow-1 justify-content-md-evenly flex-lg-grow-1 justify-content-lg-center justify-content-xl-start justify-content-xxl-start" style="margin-top: 20px;">
+                    <div class="card bg-dark" data-bss-disabled-mobile="true" data-aos="fade-down" data-aos-duration="850" style="border-radius: 20px;min-height: 280px;width: 250px;">
+                        <div class="card-body d-flex flex-column justify-content-evenly align-items-center align-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-camera" style="font-size: 64px;">
+                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"></path>
+                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"></path>
+                            </svg>
+                            <h3 class="card-title" style="text-align: center;">Photoshop Services</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <hr style="margin: 0px 0px;">
-    <footer class="text-center py-4" style="position: sticky;top: 100%;">
+        </div>
+    </section>
+    <section class="d-flex align-items-center" id="portfolio" style="min-height: 100vh;padding-top: 2em;padding-bottom: 2em;background: linear-gradient(111deg, var(--bs-dark), rgb(40,38,171) 47%, rgba(255,255,255,0) 100%, rgb(112,117,198) 100%), #243777;">
+        <div class="container" style="max-height: 100%;">
+            <div class="row" id="portfolioDescription" style="max-height: 50vh;">
+                <div class="col-md-12">
+                    <p class="text-white-50" style="margin-bottom: 2px;">Case Studies</p>
+                    <h1>Project Portfolio</h1>
+                    <p class="text-white-50">More Coming Soon!</p>
+                </div>
+            </div>
+            <div class="row d-flex flex-column flex-sm-column flex-md-row" id="projectCards">
+                <div class="col" style="padding: 12px;">
+                    <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="width: 100%;">Jr. Robots</a>
+                        <div class="collapse show" id="collapse-1">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col" style="padding: 12px;">
+                                            <h4>JR. Robots</h4>
+                                            <h6 class="text-white-50 mb-2">C# | Game Development</h6>
+                                            <p>A three-stage game inspired by the Robotics Club at DRAVHTPA. Codeveloped by RobeeDS and DVLS. Production for Windows only.</p><a href="https://github.com/RobeeDS/jr-robots" target="_blank">Download (Windows)</a>
+                                        </div>
+                                        <div class="col d-none d-lg-flex" style="padding: 12px;"><img style="width: 100%;height: 100%;border-radius: 6px;" alt="JR. Robots" src="assets/img/jr_robots.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="padding: 12px;">
+                    <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-2" href="#collapse-2" role="button" style="width: 100%;">Just Play It!</a>
+                        <div class="collapse show" id="collapse-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col" style="padding: 12px;">
+                                            <h4>Just Play It!</h4>
+                                            <h6 class="text-white-50 mb-2">HTML | CSS</h6>
+                                            <p>Codeveloped by RobeeDS and DVLS. View my first (not-very functional) collaborative site, and see how far I've come in UI/UX.</p><a href="https://robeeds.me/JustPlayIt" target="_blank">Visit</a><a href="https://github.com/RobeeDS/JustPlayIt" style="margin-left: 16px;" target="_blank">Source Code</a>
+                                        </div>
+                                        <div class="col d-none d-lg-flex" style="padding: 12px;"><img style="width: 100%;height: 100%;border-radius: 6px;" src="assets/img/JustPlayIt.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-md-flex d-lg-flex align-items-md-center justify-content-lg-center align-items-lg-center" id="contact" style="min-height: calc(100vh - 186px);">
+        <div class="container d-flex justify-content-center justify-content-xl-center" style="padding: 2em;height: 100%;">
+            <div class="row" style="max-width: 100%;min-width: 100%;">
+                <div class="col" style="padding: 0px 0px;">
+                    <div data-bss-parallax-bg="true" style="background: url(&quot;assets/img/2035.png&quot;);background-image: url(&quot;assets/img/2035.png&quot;);background-position: center;background-size: cover;border-radius: 0.3em;width: 100%;min-height: 100%;"></div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div>
+                        <form class="p-3 p-xl-4" data-bss-recipient="dbf01450557a340fd40477aedce26908">
+                            <h4>Contact Me</h4>
+                            <p class="text-secondary">Alternatively, message me on&nbsp;<a class="fw-semibold link-secondary" href="https://www.linkedin.com/in/robeeds" target="_blank">Linked<svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="text-secondary me-2" style="margin-bottom: 1px;">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                    </svg></a></p>
+                            <div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control" type="text" id="name-1" name="name"></div>
+                            <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" type="email" id="email-1" name="email"></div>
+                            <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message-1" name="message" rows="6"></textarea></div>
+                            <div class="mb-3"><button class="btn btn-primary" type="submit">Send </button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4" style="position: sticky;top: 100%;background: var(--bs-dark);">
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-3">
-                <div class="col d-flex justify-content-center">
-                    <p class="text-start my-2">Copyright © 2023 RobeeDS</p>
+            <div class="row row-cols-sm-1 row-cols-md-3 d-flex flex-sm-column flex-md-row">
+                <div class="col-sm-auto">
+                    <p class="text-start d-flex d-sm-flex justify-content-center justify-content-sm-center justify-content-md-start my-2">Copyright © 2023 RobeeDS</p>
                 </div>
-                <div class="col d-flex justify-content-center">
+                <div class="col-sm-auto">
                     <ul class="list-inline text-center">
-                        <li class="list-inline-item"><a href="https://github.com/RobeeDS" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-2 text-light me-2">
+                        <li class="list-inline-item" style="max-width: 64px;max-height: 64px;"><a href="https://github.com/RobeeDS" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-3 text-light me-2">
                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
                                 </svg></a></li>
-                        <li class="list-inline-item"><a class="link-light" href="https://www.linkedin.com/in/robeeds" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin fs-2 text-light me-2">
+                        <li class="list-inline-item" style="max-width: 64px;max-height: 64px;"><a class="link-light" href="https://www.linkedin.com/in/robeeds" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin fs-3 text-light me-2">
                                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
                                 </svg></a></li>
                     </ul>
                 </div>
-                <div class="col d-flex justify-content-center">
-                    <ul class="list-inline text-end my-2">
-                        <li class="list-inline-item"><a class="link-light" href="about.html">About</a></li>
-                        <li class="list-inline-item"><a class="link-light" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+                <div class="col-sm-auto"><a class="link-light d-flex d-sm-flex justify-content-center justify-content-sm-center justify-content-md-end" href="#" style="margin: 8px;">Back to Top</a></div>
             </div>
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
 </body>
 
