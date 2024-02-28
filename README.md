@@ -20,7 +20,7 @@ Old ePortfolio site built with BootstrapCSS, previously hosted via GitHub Pages.
 5. Deploy site using Vercel
 
 ### Solution
-- Solution Repo - [Github](https://github.com/robeeds/bank_modern_app)
+- Solution Repo - [Github](https://github.com/robeeds/old_eportfolio/)
 
 ## My Process
 
