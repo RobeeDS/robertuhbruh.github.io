@@ -13,11 +13,10 @@ Old ePortfolio site built with BootstrapCSS, previously hosted via GitHub Pages.
 ## Overview
 
 ### Requirements
-1. Reference Figma mockup of site
-2. Generate a React template using npm and Vite
-3. Import data and assets using a JS file
-4. Create reusable styling components with Tailwind
-5. Deploy site using Vercel
+1. Use Bootstrap Studio to host project locally during development
+2. Create custom color theme
+3. Create custom styling components
+4. Deploy site using Vercel
 
 ### Solution
 - Solution Repo - [Github](https://github.com/robeeds/old_eportfolio/)
